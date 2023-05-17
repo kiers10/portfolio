@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 600px) {
   .hero-section {
-    padding: 20vmin 2rem;
+    padding: 60vmin 2rem;
   }
 }
 
@@ -43,13 +43,13 @@
 
 @media only screen and (max-width: 600px) {
   .intro {
-    font-size: 30px;
+    font-size: 28px;
   }
   .role {
-    font-size: 24px;
+    font-size: 20px;
   }
   .cta-btn {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
