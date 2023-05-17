@@ -1,0 +1,13 @@
+.socials-btn {
+  color: rgba(245, 245, 245, 0.6);
+}
+.socials-btn:hover {
+  color: #00c2ff;
+  cursor: pointer;
+}
+
+.email {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  color: rgba(245, 245, 245, 0.6);
+}

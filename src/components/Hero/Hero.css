@@ -1,0 +1,56 @@
+.hero-section {
+  padding: 20vmin 10rem;
+}
+
+.intro {
+  margin: 0;
+
+  width: 19ch;
+  animation: typing 2s steps(19) 0.5s 1 normal both,
+    blink 0.5s step-end infinite alternate 2.25s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid #00c2ff;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.role {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.desc {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    font-size: 30px;
+  }
+  .role {
+    font-size: 24px;
+  }
+  .cta-btn {
+    font-size: 20px;
+  }
+}
+
+.cta-btn {
+  font-family: "Source Code Pro", monospace !important;
+  text-transform: capitalize !important;
+  font-size: 22px !important;
+  color: #00c2ff !important;
+  border-color: #00c2ff !important;
+  padding: 0.5rem 2rem !important;
+}
+.cta-btn:hover {
+  border-color: #00c2ff !important;
+}

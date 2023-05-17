@@ -1,0 +1,77 @@
+.experience-section {
+  padding: 5rem 20rem;
+}
+@media only screen and (max-width: 1300px) {
+  .experience-section {
+    padding: 5rem 15rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .experience-section {
+    padding: 5rem 10rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .experience-section {
+    padding: 5rem 3rem;
+  }
+}
+
+.experience-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 60px;
+}
+
+.company-btn {
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+
+  font-family: "Source Code Pro", monospace;
+  text-align: left;
+  padding: 1rem;
+
+  border-right: 3px solid #2b2b2b;
+}
+.company-btn:hover {
+  background-color: #2b2b2b;
+  color: #00c2ff;
+}
+.company-btn-active {
+  background-color: #1d1d1d;
+  color: #00c2ff;
+  border-right: 3px solid #00c2ff;
+}
+
+ul li::marker {
+  content: "○ ";
+  list-style-type: circle;
+  font-size: 30px;
+  color: #00c2ff;
+}
+
+.MuiTab-root {
+  font-family: "Source Code Pro", monospace !important;
+  text-transform: capitalize !important;
+  font-size: 18px !important;
+  align-items: flex-start !important;
+  padding-left: 1.5rem !important;
+  color: rgba(245, 245, 245, 0.6) !important;
+  border-right: 3px solid #2b2b2b !important;
+}
+@media only screen and (max-width: 1200px) {
+  .MuiTab-root {
+    border-right: none !important;
+    border-bottom: 3px solid #2b2b2b !important;
+  }
+}
+.Mui-selected {
+  background-color: #1d1d1d !important;
+  color: #00c2ff !important;
+}
+.MuiTabs-indicator {
+  background: #00c2ff !important;
+}

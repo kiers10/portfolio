@@ -1,0 +1,26 @@
+.about-me-section {
+  padding: 5rem 15rem;
+}
+@media only screen and (max-width: 1200px) {
+  .about-me-section {
+    padding: 5rem 10rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about-me-section {
+    padding: 5rem 3rem;
+  }
+}
+
+.about-me-wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(30ch, auto));
+  gap: 2rem;
+  padding: 10vmin 7rem; */
+  grid-template-columns: 3fr 2fr;
+  gap: 25px;
+}
+
+.about-me-img {
+  width: 95%;
+}
