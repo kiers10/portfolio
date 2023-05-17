@@ -5,8 +5,12 @@ import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import { openInNewTab } from "../Page";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import { useMediaQuery } from "@mui/material";
 
 const Projects = () => {
+  const isSmallScreen = useMediaQuery("(max-width:1200px)");
+
   const projects = ProjectsList.projects.map((project, idx) => {
     let alternate = idx % 2 === 0;
     return (
@@ -56,11 +60,13 @@ const Projects = () => {
 
           <Grid lg={5} display="flex" alignItems="center">
             <Grid container spacing={4} flexWrap="nowrap">
-              <Grid lg={3}>
-                <hr className="projects-line" />
-              </Grid>
+              {!isSmallScreen && (
+                <Grid>
+                  <hr className="projects-line" />
+                </Grid>
+              )}
 
-              <Grid lg={9}>
+              <Grid>
                 <div className="project-info-wrapper">
                   <p className="wt fs-md">{project.title}</p>
                   <p className="dt fs-sm">{project.description}</p>
@@ -98,13 +104,8 @@ const Projects = () => {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.3 }}
-        className="heading"
       >
-        <hr className="heading-before-line" />
-        <p className="bt fs-lg bold">
-          {`{`} <span className="wt"> Projects </span> {`}`}
-        </p>
-        <hr className="heading-after-line" />
+        <SectionHeading sectionName="Projects" />
       </motion.div>
       <div className="projects-wrapper">{projects}</div>
     </div>

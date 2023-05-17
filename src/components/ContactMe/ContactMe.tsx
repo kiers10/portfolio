@@ -7,6 +7,7 @@ import { openInNewTab } from "../Page";
 import Resume from "../../images/Resume.pdf";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const ContactMe = () => {
   return (
@@ -17,13 +18,7 @@ const ContactMe = () => {
       viewport={{ once: true, amount: 0.3 }}
       className="contact-me-section"
     >
-      <div className="heading">
-        <hr className="heading-before-line" />
-        <p className="bt fs-lg bold">
-          {`{`} <span className="wt">Contact Me</span> {`}`}
-        </p>
-        <hr className="heading-after-line" />
-      </div>
+      <SectionHeading sectionName="Contact Me" />
 
       <Grid container spacing={5}>
         <Grid

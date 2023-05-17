@@ -3,6 +3,7 @@ import MeImg from "../../images/Me.svg";
 import Grid from "@mui/material/Unstable_Grid2";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const AboutMe = () => {
   return (
@@ -13,13 +14,7 @@ const AboutMe = () => {
       viewport={{ once: true, amount: 0.3 }}
       className="about-me-section"
     >
-      <div className="heading">
-        <hr className="heading-before-line" />
-        <p className="bt fs-lg bold">
-          {`{`} <span className="wt">About Me</span> {`}`}
-        </p>
-        <hr className="heading-after-line" />
-      </div>
+      <SectionHeading sectionName="About Me" />
 
       <Grid container spacing={5}>
         <Grid lg={7} md={12}>

@@ -69,14 +69,6 @@
   line-height: 1.75;
 }
 
-.heading {
-  margin-bottom: 2.5rem;
-
-  display: grid;
-  grid-template-columns: 0.25fr auto 3fr;
-  gap: 1rem;
-  align-items: center;
-}
 .heading-before-line,
 .heading-after-line {
   background-color: #2b2b2b;
