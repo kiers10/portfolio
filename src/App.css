@@ -35,7 +35,7 @@
   color: #f5f5f5;
 }
 .dt {
-  color: rgba(245, 245, 245, 0.6);
+  color: #9a9a9a;
 }
 .bt {
   color: #00c2ff;
@@ -43,22 +43,22 @@
 
 /* Text Sizes */
 .fs-xxl {
-  font-size: 46px;
+  font-size: 45px;
 }
 .fs-xl {
   font-size: 32px;
 }
 .fs-lg {
-  font-size: 25px;
+  font-size: 23px;
 }
 .fs-md {
-  font-size: 22px;
+  font-size: 20px;
 }
 .fs-sm {
-  font-size: 18px;
+  font-size: 16px;
 }
 .fs-xs {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Text Decoration */

@@ -28,8 +28,8 @@ const Hero = () => {
               className="hero-img-wrapper"
             >
               <p className="dt fs-xl role">
-                I enjoy <span className="bold">designing</span> and{" "}
-                <span className="bold">developing</span> digital experiences.
+                I <span className="bold">design</span> and{" "}
+                <span className="bold">develop</span> digital experiences.
               </p>
               <Button
                 variant="outlined"
