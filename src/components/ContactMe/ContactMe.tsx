@@ -1,6 +1,4 @@
 import "./ContactMe.css";
-import Grid from "@mui/material/Unstable_Grid2";
-import ContactImg from "../../images/ContactMe.svg";
 import { Button } from "@mui/material";
 import { IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 import { openInNewTab } from "../Page";
