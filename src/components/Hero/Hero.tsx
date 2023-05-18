@@ -4,64 +4,64 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
+import { IconArrowBadgeDown, IconArrowBigDown } from "@tabler/icons-react";
 
 const Hero = () => {
   return (
     <div className="hero-section">
-      <Grid container spacing={2}>
-        <Grid
-          lg={7}
-          xs={12}
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <div className="hero-text-wrapper">
-            <h1 className="wt fs-xxl intro">
-              Hi, it's <span className="bt">Kiersten</span>.
-            </h1>
+      <div className="hero-text-wrapper">
+        <h1 className="wt fs-xxl intro">
+          Hi, it's <span className="bt">Kiersten</span>.
+        </h1>
 
-            <motion.div
-              variants={fadeInUp}
-              initial="offscreen"
-              animate="onscreendelay"
-              className="hero-img-wrapper"
-            >
-              <p className="dt fs-xl role">
-                I <span className="bold">design</span> and{" "}
-                <span className="bold">develop</span> digital experiences.
-              </p>
-              <Button
-                variant="outlined"
-                className="cta-btn"
-                component={motion.div}
-                whileHover={{
-                  scale: 1.05,
-                }}
-                transition={{ type: "spring", stiffness: 400, damping: 20 }}
-              >
-                Let's Connect!
-              </Button>
-            </motion.div>
-          </div>
-        </Grid>
-        <Grid
-          lg={5}
-          xs={0}
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
+        <motion.div
+          variants={fadeInUp}
+          initial="offscreen"
+          animate="onscreendelay"
+          className="hero-img-wrapper"
         >
-          <motion.div
-            variants={fadeInUp}
-            initial="offscreen"
-            animate="onscreendelay"
-            className="hero-img-wrapper"
+          <p className="dt fs-xl role">
+            I'm a <span className="bold">Software Engineer</span> that likes to
+            design and develop things for the web.
+          </p>
+          <Button
+            variant="outlined"
+            className="cta-btn"
+            component={motion.div}
+            whileHover={{
+              scale: 1.05,
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
           >
-            <img src={HeroImg} alt="Hero" style={{ width: "100%" }} />
-          </motion.div>
+            Let's Connect!
+          </Button>
+        </motion.div>
+      </div>
+      <motion.div
+        variants={fadeInUp}
+        initial="offscreen"
+        animate="onscreenbigdelay"
+        className="scroll-cta-wrapper"
+      >
+        <Grid container spacing={0} direction="column">
+          <Grid display="flex" justifyContent="center" alignItems="center">
+            <p className="dt">Learn More</p>
+          </Grid>
+          <Grid display="flex" justifyContent="center" alignItems="center">
+            <motion.div
+              animate={{ y: 10 }}
+              transition={{
+                duration: 1,
+                delay: 5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <IconArrowBigDown stroke={1.25} size={40} color="#f5f5f5" />
+            </motion.div>
+          </Grid>
         </Grid>
-      </Grid>
+      </motion.div>
     </div>
   );
 };

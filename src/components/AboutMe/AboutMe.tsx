@@ -3,7 +3,6 @@ import MeImg from "../../images/Me.svg";
 import Grid from "@mui/material/Unstable_Grid2";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
-import SectionHeading from "../SectionHeading/SectionHeading";
 
 const AboutMe = () => {
   return (
@@ -14,7 +13,12 @@ const AboutMe = () => {
       viewport={{ once: true, amount: 0.3 }}
       className="about-me-section"
     >
-      <SectionHeading sectionName="About Me" />
+      <div className="section-heading-wrapper">
+        <p className="wt fs-lg bold" style={{ marginBottom: "1px" }}>
+          About Me
+        </p>
+        <hr className="heading-line" style={{ marginLeft: 0 }} />
+      </div>
 
       <Grid container spacing={5}>
         <Grid lg={7} md={12}>

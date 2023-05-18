@@ -1,5 +1,5 @@
 .contact-me-section {
-  padding: 5rem 15rem;
+  padding: 5rem 25rem;
 }
 @media only screen and (max-width: 1200px) {
   .contact-me-section {
@@ -28,4 +28,8 @@
 .contact-me-socials-btn:hover {
   color: #00c2ff;
   cursor: pointer;
+}
+
+.contact-me-text-wrapper {
+  text-align: center;
 }

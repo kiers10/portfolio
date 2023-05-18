@@ -5,7 +5,6 @@ import { Tab, Tabs, useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
-import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Experience = () => {
   const [selectedJobIdx, setSelectedJobIdx] = useState(0);
@@ -34,7 +33,12 @@ const Experience = () => {
       viewport={{ once: true, amount: 0.3 }}
       className="experience-section"
     >
-      <SectionHeading sectionName="Experience" />
+      <div className="section-heading-wrapper">
+        <p className="wt fs-lg bold" style={{ marginBottom: "1px" }}>
+          Experience
+        </p>
+        <hr className="heading-line" style={{ marginLeft: 0 }} />
+      </div>
 
       <Grid container spacing={6}>
         <Grid lg={3.5}>

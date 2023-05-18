@@ -1,9 +1,9 @@
 .hero-section {
-  padding: 20vmin 12rem;
+  padding: 25vmin 12rem 10vmin;
 }
 @media only screen and (max-width: 1200px) {
   .hero-section {
-    padding: 20vmin 8rem;
+    padding: 25vmin 8rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -63,4 +63,8 @@
   .cta-btn {
     font-size: 18px !important;
   }
+}
+
+.scroll-cta-wrapper {
+  margin-top: 8rem;
 }

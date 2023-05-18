@@ -34,6 +34,11 @@ export const fadeInUp = {
     y: 0,
     transition: { duration: 0.5, delay: 3 },
   },
+  onscreenbigdelay: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: 4 },
+  },
 };
 
 const Page = () => {

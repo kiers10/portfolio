@@ -5,7 +5,7 @@ import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import { openInNewTab } from "../Page";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
-import SectionHeading from "../SectionHeading/SectionHeading";
+
 import { useMediaQuery } from "@mui/material";
 
 const Projects = () => {
@@ -105,7 +105,12 @@ const Projects = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <SectionHeading sectionName="Projects" />
+        <div className="section-heading-wrapper">
+          <p className="wt fs-lg bold" style={{ marginBottom: "1px" }}>
+            Projects
+          </p>
+          <hr className="heading-line" style={{ marginLeft: 0 }} />
+        </div>
       </motion.div>
       <div className="projects-wrapper">{projects}</div>
     </div>
