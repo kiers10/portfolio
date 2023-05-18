@@ -1,10 +1,9 @@
 import "./Hero.css";
-import HeroImg from "../../images/Hero.svg";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
-import { IconArrowBadgeDown, IconArrowBigDown } from "@tabler/icons-react";
+import { IconArrowBigDown } from "@tabler/icons-react";
 
 const Hero = () => {
   return (
