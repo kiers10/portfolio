@@ -31,7 +31,6 @@ const Hero = () => {
               scale: 1.05,
             }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
-            // onClick={() => window.location.replace("/#contact-me")}
             onClick={(e) => {
               let contact = document.getElementById("contact-me");
               e.preventDefault();
