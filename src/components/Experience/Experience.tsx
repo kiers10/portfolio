@@ -32,6 +32,7 @@ const Experience = () => {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.3 }}
       className="experience-section"
+      id="experience"
     >
       <div className="section-heading-wrapper">
         <p className="wt fs-lg bold" style={{ marginBottom: "1px" }}>

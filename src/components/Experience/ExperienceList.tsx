@@ -7,15 +7,7 @@ export const ExperienceList = {
       endDate: "Present",
       bullets: [
         {
-          bullet:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        },
-        {
-          bullet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          bullet:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+          bullet: "TBA",
         },
       ],
     },

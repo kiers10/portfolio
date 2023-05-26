@@ -11,3 +11,7 @@
   transform: rotate(-180deg);
   color: rgba(245, 245, 245, 0.6);
 }
+.email:hover {
+  color: #00c2ff;
+  cursor: pointer;
+}

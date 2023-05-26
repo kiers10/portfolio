@@ -12,7 +12,8 @@ import ContactMe from "./ContactMe/ContactMe";
 import Resume from "../images/Resume.pdf";
 import { useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
-import ParticleBackground from "./ParticleBackground";
+import ParticleBackground from "./Background/ParticleBackground";
+import Credits from "./Footer/Footer";
 
 export const openInNewTab = (url: string) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -100,7 +101,22 @@ const Page = () => {
             </div>
 
             <div className="email-wrapper">
-              <p className="email">kierstendensmore@knights.ucf.edu</p>
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+              >
+                <p
+                  className="email"
+                  onClick={() =>
+                    (window.location.href =
+                      "mailto:kierstendensmore@knights.com")
+                  }
+                >
+                  kierstendensmore@knights.ucf.edu
+                </p>
+              </motion.div>
               <hr className="email-after-line" />
             </div>
           </>
@@ -110,6 +126,7 @@ const Page = () => {
         <Experience />
         <Projects />
         <ContactMe />
+        <Credits />
       </div>
     </>
   );

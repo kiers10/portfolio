@@ -14,6 +14,7 @@ const ContactMe = () => {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.3 }}
       className="contact-me-section"
+      id="contact-me"
     >
       <div className="section-heading-wrapper">
         <p
@@ -75,6 +76,9 @@ const ContactMe = () => {
               stroke={1.25}
               size={45}
               className="contact-me-socials-btn"
+              onClick={() =>
+                (window.location.href = "mailto:kierstendensmore@knights.com")
+              }
             />
           </motion.div>
         </div>

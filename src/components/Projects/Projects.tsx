@@ -19,6 +19,7 @@ const Projects = () => {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.3 }}
+        id="projects"
       >
         <Grid
           container

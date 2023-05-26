@@ -60,6 +60,9 @@
 .fs-xs {
   font-size: 14px;
 }
+.fs-xxs {
+  font-size: 12px;
+}
 
 /* Text Decoration */
 .bold {
@@ -67,6 +70,9 @@
 }
 .lh {
   line-height: 1.75;
+}
+.center {
+  text-align: center;
 }
 
 .heading-line {

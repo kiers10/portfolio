@@ -1,0 +1,13 @@
+.footer-section {
+  padding: 8rem 25rem 1rem;
+}
+@media only screen and (max-width: 1200px) {
+  .footer-section {
+    padding: 8rem 8rem 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer-section {
+    padding: 8rem 2rem 1rem;
+  }
+}

@@ -12,6 +12,7 @@ const AboutMe = () => {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.3 }}
       className="about-me-section"
+      id="about-me"
     >
       <div className="section-heading-wrapper">
         <p className="wt fs-lg bold" style={{ marginBottom: "1px" }}>
