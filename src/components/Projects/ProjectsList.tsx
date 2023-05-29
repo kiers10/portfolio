@@ -1,6 +1,6 @@
-import CompositionToday from "../../images/CompositionToday.svg";
-import ContactManager from "../../images/ContactManager.svg";
-import CollegeEvents from "../../images/CollegeEvents.svg";
+import CompositionToday from "../../images/CompositionToday.jpg";
+import ContactManager from "../../images/ContactManager.jpg";
+import CollegeEvents from "../../images/CollegeEvents.jpg";
 
 export const ProjectsList = {
   projects: [

@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import MeImg from "../../images/Me.svg";
+import MeImg from "../../images/Me.jpg";
 import Grid from "@mui/material/Unstable_Grid2";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Page";
