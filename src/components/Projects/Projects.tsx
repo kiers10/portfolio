@@ -9,7 +9,7 @@ import { fadeInUp } from "../Page";
 import { useMediaQuery } from "@mui/material";
 
 const Projects = () => {
-  const isSmallScreen = useMediaQuery("(max-width:1200px)");
+  const isSmallScreen = useMediaQuery("(max-width:900px)");
 
   const projects = ProjectsList.projects.map((project, idx) => {
     let alternate = idx % 2 === 0;
@@ -28,7 +28,7 @@ const Projects = () => {
           sx={{ marginBottom: "5rem" }}
         >
           <Grid
-            lg={7}
+            md={7}
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -47,7 +47,13 @@ const Projects = () => {
               <img src={project.image} alt="" className="project-img" />
               <div
                 className="overlay"
-                onClick={() => openInNewTab(project.projectLink)}
+                onClick={() =>
+                  openInNewTab(
+                    project.projectLink
+                      ? project.projectLink
+                      : project.githubLink
+                  )
+                }
               >
                 <IconExternalLink
                   className="icon"
@@ -59,7 +65,7 @@ const Projects = () => {
             </motion.div>
           </Grid>
 
-          <Grid lg={5} display="flex" alignItems="center">
+          <Grid md={5} display="flex" alignItems="center">
             <Grid container spacing={4} flexWrap="nowrap">
               {!isSmallScreen && (
                 <Grid>

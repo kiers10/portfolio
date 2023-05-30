@@ -1,9 +1,19 @@
 import CompositionToday from "../../images/CompositionToday.jpg";
 import ContactManager from "../../images/ContactManager.jpg";
 import CollegeEvents from "../../images/CollegeEvents.jpg";
+import LeetCodeExtension from "../../images/LeetCodeExtension.jpg";
 
 export const ProjectsList = {
   projects: [
+    {
+      title: "LeetCode Extension",
+      image: LeetCodeExtension,
+      description:
+        "A Chrome extension that visualizes LeetCode account statistics, provides the daily problem, and recommends random LeetCode problems to users.",
+      technologies: "React TypeScript Material-UI",
+      projectLink: "",
+      githubLink: "https://github.com/kiers10/LeetCode-Extension",
+    },
     {
       title: "Composition Today",
       image: CompositionToday,
